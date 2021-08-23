@@ -1,0 +1,27 @@
+site_name: IDS FAIR Application Profile
+site_url: https://example.com/
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+  features:
+    - navigation.tabs
+    - navigation.top
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - admonition
+
+nav:
+  - Introduction: index.md
+  - Classes:
+      - Catalog: classes/catalog.md
+      - Dataset: classes/dataset.md
+      - Distribution: classes/distribution.md
