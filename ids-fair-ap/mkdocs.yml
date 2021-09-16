@@ -1,6 +1,8 @@
 site_name: IDS FAIR Application Profile
 site_url: https://example.com/
-
+extra_css:
+  - stylesheets/extra.css
+  
 theme:
   name: material
   palette:
@@ -10,6 +12,8 @@ theme:
     - navigation.tabs
     - navigation.top
 
+
+    
 markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
