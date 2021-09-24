@@ -5,6 +5,8 @@ extra_css:
   
 theme:
   name: material
+  icon:
+    logo: material/view-comfy
   palette:
     scheme: slate
     primary: teal
@@ -12,8 +14,9 @@ theme:
     - navigation.tabs
     - navigation.top
 
-
-    
+repo_url: https://github.com/fair-data-spaces/ids-fair-ap
+copyright: © Copyright 2021, Fraunhofer
+edit_uri: ""   
 markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -26,6 +29,5 @@ markdown_extensions:
 nav:
   - Introduction: index.md
   - Classes:
-      - Catalog: classes/catalog.md
-      - Dataset: classes/dataset.md
-      - Distribution: classes/distribution.md
+      - Data Resource: classes/data_resource.md
+      - CSV File: classes/csv_file.md
