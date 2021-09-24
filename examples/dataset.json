@@ -1,0 +1,283 @@
+{
+    "@context" : {
+      "ids" : "https://w3id.org/idsa/core/",
+      "idsc" : "https://w3id.org/idsa/code/"
+    },
+    "@type" : "ids:BaseConnector",
+    "@id" : "http://ids-connector.fokus.fraunhofer.de#Connector",
+    "ids:version" : "2.0.0",
+    "ids:title" : [ {
+      "@value" : "Deutsche Bahn Open Data Demo Konnektor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    } ],
+    "ids:hasEndpoint" : [ {
+      "@type" : "ids:ConnectorEndpoint",
+      "@id" : "http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/406a2a9d-339b-494c-a8be-22ae347620ca",
+      "ids:endpointInformation" : [ {
+        "@value" : "All IDS Multipart messages should be sent to this endpoint.",
+        "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      } ],
+      "ids:accessURL" : {
+        "@id" : "http://ids-connector.fokus.fraunhofer.de/infrastructure"
+      }
+    }, {
+      "@type" : "ids:ConnectorEndpoint",
+      "@id" : "http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/7af4b1da-a6f2-466a-826f-1025798b7efb",
+      "ids:endpointInformation" : [ {
+        "@value" : "IDS ArtifactRequestMessages can be sent to this endpoint via POST request.",
+        "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      } ],
+      "ids:accessURL" : {
+        "@id" : "http://ids-connector.fokus.fraunhofer.de/data"
+      }
+    }, {
+      "@type" : "ids:ConnectorEndpoint",
+      "@id" : "http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/a8bdd571-cefe-4b7c-a97b-b99f94271aa5",
+      "ids:endpointInformation" : [ {
+        "@value" : "IDS DescriptionRequestMessages can be sent to this endpoint via POST request.",
+        "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      } ],
+      "ids:accessURL" : {
+        "@id" : "http://ids-connector.fokus.fraunhofer.de/about"
+      }
+    }, {
+      "@type" : "ids:ConnectorEndpoint",
+      "@id" : "http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/77a0ab54-4d35-4afb-b00c-554ef5c43850",
+      "ids:endpointInformation" : [ {
+        "@value" : "The Connector SelfDescription can be obtained from this endpoint via GET request.",
+        "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      } ],
+      "ids:accessURL" : {
+        "@id" : "http://ids-connector.fokus.fraunhofer.de/about"
+      }
+    } ],
+    "ids:resourceCatalog" : [ {
+      "@type" : "ids:ResourceCatalog",
+      "@id" : "http://ids-connector.fokus.fraunhofer.de#Catalog",
+      "ids:offeredResource" : [ {
+        "@type" : "ids:DataResource",
+        "@id" : "http://ids-connector.fokus.fraunhofer.de/DataResource/53",
+        "ids:version" : "3.0",
+        "ids:description" : [ {
+          "@value" : "<p>The International Data Spaces (IDS) are virtual data spaces leveraging existing standards and technologies, as well as governance models, well-accepted in the data economy, to facilitate secure and standardized data exchange and data linkage in a trusted business ecosystem. It thereby provides a basis for creating smart service scenarios and facilitating innovative cross-company business processes, while at the same time guaranteeing data sovereignty for data owners.</p>\n\n<p>Data sovereignty is a central aspect of the IDS. It can be defined as a natural person&rsquo;s or corporate entity&rsquo;s capability of being entirely self-determined with regard to its data. The International Data Spaces initiative proposes a Reference Architecture Model for this particular capability and related aspects, including requirements for secure and trusted data exchange in business ecosystems.</p>\n\n<p>Focusing on the generalization of concepts, functionality, and overall processes involved in the creation of a secure &ldquo;network of trusted data&rdquo;, the IDS Reference Architecture resides at a higher abstraction level than common architecture models of concrete software solutions do. The document provides an overview supplemented by dedicated architecture specifications defining the individual components of the IDS (Connector, Broker, App Store, etc.) in detail.</p>\n\n<p>In compliance with common system architecture models and standards (e.g., ISO 42010, 4+1 view model), the IDS Reference Architecture Model uses a five-layer structure expressing various stakeholders&rsquo; concerns and viewpoints at different levels of granularity.</p>\n\n<p>The general structure of the IDS Reference Architecture Model is made up of five layers:</p>\n\n<p>The <em>Business Layer </em>specifies and categorizes the different roles which the participants of the IDS can assume, and it specifies the main activities and interactions connected with each of these roles.</p>\n\n<p>The <em>Functional Layer</em> defines the functional requirements of the IDS, plus the concrete features to be derived from these.</p>\n\n<p>The <em>Process Layer </em>specifies the interactions taking place between the different components of the IDS; using the BPMN notation, it provides a dynamic view of the Reference Architecture Model.</p>\n\n<p>The <em>Information</em> <em>Layer </em>defines a conceptual model which makes use of linked-data principles for describing both the static and the dynamic aspects of the IDS&rsquo;s constituents.</p>\n\n<p>The <em>System Layer </em>is concerned with the decomposition of the logical software components, considering aspects suchas integration, configuration, deployment, and extensibility of these components.</p>\n\n<p>In addition, the IDS Reference Architecture Model comprises three perspectives that need to be implemented across all five layers: <em>Security, Certification, and Governance.</em></p>",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        } ],
+        "ids:title" : [ {
+          "@value" : "IDS Reference Architecture Model",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        } ],
+        "ids:keyword" : [ {
+          "@value" : "IDS Reference Architecture Model",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "Connector",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "Data Economy",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "IDS Connector",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "Data Spaces",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "Data Exchange",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "International Data Spaces",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "Data Ecosystem",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "Data Sovereignty",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "Data self-determination",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "IDS",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "Data Sharing",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "IDS-RAM",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        } ],
+        "ids:customLicense" : {
+          "@id" : "CC-BY-4.0"
+        },
+        "ids:resourceEndpoint" : [ {
+          "@type" : "ids:ConnectorEndpoint",
+          "@id" : "http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/9e4649c5-fda8-43c4-b446-d048921301f3",
+          "ids:endpointArtifact" : {
+            "@type" : "ids:Artifact",
+            "@id" : "http://ids-connector.fokus.fraunhofer.de/Artifact/210",
+            "ids:fileName" : "IDS-Reference-Architecture-Model-3.0.pdf",
+            "ids:creationDate" : {
+              "@value" : "2021-09-01T06:59:58.595Z",
+              "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+            }
+          },
+          "ids:endpointInformation" : [ {
+            "@value" : "The file IDS-Reference-Architecture-Model-3.0.pdf can be obtained from this endpoint via GET request.",
+            "@type" : "http://www.w3.org/2001/XMLSchema#string"
+          } ],
+          "ids:accessURL" : {
+            "@id" : "http://ids-connector.fokus.fraunhofer.de/data/210"
+          },
+          "http://purl.org/dc/terms/format" : "pdf",
+          "http://purl.org/dc/terms/license" : "",
+          "http://purl.org/dc/terms/title" : "",
+          "http://purl.org/dc/terms/description" : ""
+        } ]
+      }, {
+        "@type" : "ids:DataResource",
+        "@id" : "http://ids-connector.fokus.fraunhofer.de/DataResource/13",
+        "ids:version" : "",
+        "ids:description" : [ {
+          "@value" : "Geoinformationen zu den Betriebsstellen des Schienenverkehrsnetzes.\r\n",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        } ],
+        "ids:title" : [ {
+          "@value" : "Geo-Betriebsstelle",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        } ],
+        "ids:keyword" : [ {
+          "@value" : "DB Netz",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "Geo",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "Stammdaten",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        }, {
+          "@value" : "Betriebsstelle",
+          "@type" : "http://www.w3.org/2001/XMLSchema#string"
+        } ],
+        "ids:customLicense" : {
+          "@id" : "http://www.opendefinition.org/licenses/cc-by"
+        },
+        "ids:resourceEndpoint" : [ {
+          "@type" : "ids:ConnectorEndpoint",
+          "@id" : "http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/fddb326e-431c-4b30-8e38-f88386c4db00",
+          "ids:endpointArtifact" : {
+            "@type" : "ids:Artifact",
+            "@id" : "http://ids-connector.fokus.fraunhofer.de/Artifact/32",
+            "ids:fileName" : "geo-betriebsstelle_2018.zip",
+            "ids:creationDate" : {
+              "@value" : "2020-09-14T10:18:32.960Z",
+              "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+            }
+          },
+          "ids:endpointInformation" : [ {
+            "@value" : "The file geo-betriebsstelle_2018.zip can be obtained from this endpoint via GET request.",
+            "@type" : "http://www.w3.org/2001/XMLSchema#string"
+          } ],
+          "ids:accessURL" : {
+            "@id" : "http://ids-connector.fokus.fraunhofer.de/data/32"
+          },
+          "http://purl.org/dc/terms/format" : "ZIP",
+          "http://purl.org/dc/terms/license" : {
+            "@id" : "http://www.opendefinition.org/licenses/cc-by"
+          },
+          "http://purl.org/dc/terms/title" : "geo-betriebsstelle (Stand 01/2018)",
+          "http://purl.org/dc/terms/description" : ""
+        }, {
+          "@type" : "ids:ConnectorEndpoint",
+          "@id" : "http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/16d5d5dd-ac67-41e5-81a5-f5c1cd7cdf17",
+          "ids:endpointArtifact" : {
+            "@type" : "ids:Artifact",
+            "@id" : "http://ids-connector.fokus.fraunhofer.de/Artifact/31",
+            "ids:fileName" : "geo-betriebsstelle_2019.zip",
+            "ids:creationDate" : {
+              "@value" : "2020-09-14T10:18:32.960Z",
+              "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+            }
+          },
+          "ids:endpointInformation" : [ {
+            "@value" : "The file geo-betriebsstelle_2019.zip can be obtained from this endpoint via GET request.",
+            "@type" : "http://www.w3.org/2001/XMLSchema#string"
+          } ],
+          "ids:accessURL" : {
+            "@id" : "http://ids-connector.fokus.fraunhofer.de/data/31"
+          },
+          "http://purl.org/dc/terms/format" : "ZIP",
+          "http://purl.org/dc/terms/license" : {
+            "@id" : "http://www.opendefinition.org/licenses/cc-by"
+          },
+          "http://purl.org/dc/terms/title" : "geo-betriebsstelle (Stand 01/2019)",
+          "http://purl.org/dc/terms/description" : ""
+        }, {
+          "@type" : "ids:ConnectorEndpoint",
+          "@id" : "http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/e54a57a5-02c6-4494-94de-8fe9073d827d",
+          "ids:endpointArtifact" : {
+            "@type" : "ids:Artifact",
+            "@id" : "http://ids-connector.fokus.fraunhofer.de/Artifact/33",
+            "ids:fileName" : "geo-betriebsstelle_2020.zip",
+            "ids:creationDate" : {
+              "@value" : "2020-09-14T10:18:32.960Z",
+              "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+            }
+          },
+          "ids:endpointInformation" : [ {
+            "@value" : "The file geo-betriebsstelle_2020.zip can be obtained from this endpoint via GET request.",
+            "@type" : "http://www.w3.org/2001/XMLSchema#string"
+          } ],
+          "ids:accessURL" : {
+            "@id" : "http://ids-connector.fokus.fraunhofer.de/data/33"
+          },
+          "http://purl.org/dc/terms/format" : "ZIP",
+          "http://purl.org/dc/terms/license" : {
+            "@id" : "http://www.opendefinition.org/licenses/cc-by"
+          },
+          "http://purl.org/dc/terms/title" : "geo-betriebsstelle (Stand 10/2019)",
+          "http://purl.org/dc/terms/description" : ""
+        }, {
+          "@type" : "ids:ConnectorEndpoint",
+          "@id" : "http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/e4632659-209d-4509-8bc6-35adcc7c3b6e",
+          "ids:endpointArtifact" : {
+            "@type" : "ids:Artifact",
+            "@id" : "http://ids-connector.fokus.fraunhofer.de/Artifact/34",
+            "ids:fileName" : "geo-betriebsstelle.zip",
+            "ids:creationDate" : {
+              "@value" : "2020-09-14T10:18:32.961Z",
+              "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+            }
+          },
+          "ids:endpointInformation" : [ {
+            "@value" : "The file geo-betriebsstelle.zip can be obtained from this endpoint via GET request.",
+            "@type" : "http://www.w3.org/2001/XMLSchema#string"
+          } ],
+          "ids:accessURL" : {
+            "@id" : "http://ids-connector.fokus.fraunhofer.de/data/34"
+          },
+          "http://purl.org/dc/terms/format" : "ZIP",
+          "http://purl.org/dc/terms/license" : {
+            "@id" : "http://www.opendefinition.org/licenses/cc-by"
+          },
+          "http://purl.org/dc/terms/title" : "geo-betriebsstelle (Stand 01/2017)",
+          "http://purl.org/dc/terms/description" : ""
+        } ]
+      } ],
+      "ids:requestedResource" : [ ]
+    } ],
+    "ids:securityProfile" : {
+      "@id" : "idsc:BASE_SECURITY_PROFILE"
+    },
+    "ids:maintainer" : {
+      "@id" : "http://ids-connector.fokus.fraunhofer.de#maintainer"
+    },
+    "ids:curator" : {
+      "@id" : "http://ids-connector.fokus.fraunhofer.de#curator"
+    },
+    "ids:inboundModelVersion" : [ "4.0.0" ],
+    "ids:outboundModelVersion" : "4.0.0",
+    "ids:physicalLocation" : {
+      "@type" : "ids:GeoFeature",
+      "@id" : "https://sws.geonames.org/2921044"
+    }
+}

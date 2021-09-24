@@ -1,4 +1,20 @@
 # IDS FAIR AP
 
-- https://pygments.org/languages/
-- https://w3c.github.io/dxwg/dcat-implementation-report/
+## Requirements
+
+* Material for MkDocs (https://squidfunk.github.io/mkdocs-material/)
+* Python 3
+
+## Development Instructions
+
+```
+$ pip install -r requirements.txt
+& cd ids-fair-ap
+$ mkdocs serve
+```
+
+## Build Instructions
+
+```
+$ mkdocs build -d ../docs
+```

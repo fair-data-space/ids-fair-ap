@@ -1,0 +1,155 @@
+@prefix ns0: <https://w3id.org/idsa/core/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<http://ids-connector.fokus.fraunhofer.de#Connector>
+  a <https://w3id.org/idsa/core/BaseConnector> ;
+  ns0:curator <http://ids-connector.fokus.fraunhofer.de#curator> ;
+  ns0:hasEndpoint <http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/406a2a9d-339b-494c-a8be-22ae347620ca>, <http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/7af4b1da-a6f2-466a-826f-1025798b7efb>, <http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/a8bdd571-cefe-4b7c-a97b-b99f94271aa5>, <http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/77a0ab54-4d35-4afb-b00c-554ef5c43850> ;
+  ns0:inboundModelVersion "4.0.0"^^xsd:string ;
+  ns0:maintainer <http://ids-connector.fokus.fraunhofer.de#maintainer> ;
+  ns0:outboundModelVersion "4.0.0"^^xsd:string ;
+  ns0:physicalLocation <https://sws.geonames.org/2921044> ;
+  ns0:resourceCatalog <http://ids-connector.fokus.fraunhofer.de#Catalog> ;
+  ns0:securityProfile <https://w3id.org/idsa/code/BASE_SECURITY_PROFILE> ;
+  ns0:title "Deutsche Bahn Open Data Demo Konnektor"^^xsd:string ;
+  ns0:version "2.0.0"^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/406a2a9d-339b-494c-a8be-22ae347620ca>
+  a ns0:ConnectorEndpoint ;
+  ns0:accessURL <http://ids-connector.fokus.fraunhofer.de/infrastructure> ;
+  ns0:endpointInformation "All IDS Multipart messages should be sent to this endpoint."^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/7af4b1da-a6f2-466a-826f-1025798b7efb>
+  a ns0:ConnectorEndpoint ;
+  ns0:accessURL <http://ids-connector.fokus.fraunhofer.de/data> ;
+  ns0:endpointInformation "IDS ArtifactRequestMessages can be sent to this endpoint via POST request."^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/a8bdd571-cefe-4b7c-a97b-b99f94271aa5>
+  a ns0:ConnectorEndpoint ;
+  ns0:accessURL <http://ids-connector.fokus.fraunhofer.de/about> ;
+  ns0:endpointInformation "IDS DescriptionRequestMessages can be sent to this endpoint via POST request."^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/77a0ab54-4d35-4afb-b00c-554ef5c43850>
+  a ns0:ConnectorEndpoint ;
+  ns0:accessURL <http://ids-connector.fokus.fraunhofer.de/about> ;
+  ns0:endpointInformation "The Connector SelfDescription can be obtained from this endpoint via GET request."^^xsd:string .
+
+<https://sws.geonames.org/2921044> a ns0:GeoFeature .
+<http://ids-connector.fokus.fraunhofer.de#Catalog>
+  a ns0:ResourceCatalog ;
+  ns0:offeredResource <http://ids-connector.fokus.fraunhofer.de/DataResource/53>, <http://ids-connector.fokus.fraunhofer.de/DataResource/13> .
+
+<http://ids-connector.fokus.fraunhofer.de/DataResource/53>
+  a ns0:DataResource ;
+  ns0:customLicense <http://njh.me/CC-BY-4.0> ;
+  ns0:description """<p>The International Data Spaces (IDS) are virtual data spaces leveraging existing standards and technologies, as well as governance models, well-accepted in the data economy, to facilitate secure and standardized data exchange and data linkage in a trusted business ecosystem. It thereby provides a basis for creating smart service scenarios and facilitating innovative cross-company business processes, while at the same time guaranteeing data sovereignty for data owners.</p>
+
+<p>Data sovereignty is a central aspect of the IDS. It can be defined as a natural person&rsquo;s or corporate entity&rsquo;s capability of being entirely self-determined with regard to its data. The International Data Spaces initiative proposes a Reference Architecture Model for this particular capability and related aspects, including requirements for secure and trusted data exchange in business ecosystems.</p>
+
+<p>Focusing on the generalization of concepts, functionality, and overall processes involved in the creation of a secure &ldquo;network of trusted data&rdquo;, the IDS Reference Architecture resides at a higher abstraction level than common architecture models of concrete software solutions do. The document provides an overview supplemented by dedicated architecture specifications defining the individual components of the IDS (Connector, Broker, App Store, etc.) in detail.</p>
+
+<p>In compliance with common system architecture models and standards (e.g., ISO 42010, 4+1 view model), the IDS Reference Architecture Model uses a five-layer structure expressing various stakeholders&rsquo; concerns and viewpoints at different levels of granularity.</p>
+
+<p>The general structure of the IDS Reference Architecture Model is made up of five layers:</p>
+
+<p>The <em>Business Layer </em>specifies and categorizes the different roles which the participants of the IDS can assume, and it specifies the main activities and interactions connected with each of these roles.</p>
+
+<p>The <em>Functional Layer</em> defines the functional requirements of the IDS, plus the concrete features to be derived from these.</p>
+
+<p>The <em>Process Layer </em>specifies the interactions taking place between the different components of the IDS; using the BPMN notation, it provides a dynamic view of the Reference Architecture Model.</p>
+
+<p>The <em>Information</em> <em>Layer </em>defines a conceptual model which makes use of linked-data principles for describing both the static and the dynamic aspects of the IDS&rsquo;s constituents.</p>
+
+<p>The <em>System Layer </em>is concerned with the decomposition of the logical software components, considering aspects suchas integration, configuration, deployment, and extensibility of these components.</p>
+
+<p>In addition, the IDS Reference Architecture Model comprises three perspectives that need to be implemented across all five layers: <em>Security, Certification, and Governance.</em></p>"""^^xsd:string ;
+  ns0:keyword "IDS Reference Architecture Model"^^xsd:string, "Connector"^^xsd:string, "Data Economy"^^xsd:string, "IDS Connector"^^xsd:string, "Data Spaces"^^xsd:string, "Data Exchange"^^xsd:string, "International Data Spaces"^^xsd:string, "Data Ecosystem"^^xsd:string, "Data Sovereignty"^^xsd:string, "Data self-determination"^^xsd:string, "IDS"^^xsd:string, "Data Sharing"^^xsd:string, "IDS-RAM"^^xsd:string ;
+  ns0:resourceEndpoint <http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/9e4649c5-fda8-43c4-b446-d048921301f3> ;
+  ns0:title "IDS Reference Architecture Model"^^xsd:string ;
+  ns0:version "3.0"^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/9e4649c5-fda8-43c4-b446-d048921301f3>
+  a ns0:ConnectorEndpoint ;
+  dc:description ""^^xsd:string ;
+  dc:format "pdf"^^xsd:string ;
+  dc:license ""^^xsd:string ;
+  dc:title ""^^xsd:string ;
+  ns0:accessURL <http://ids-connector.fokus.fraunhofer.de/data/210> ;
+  ns0:endpointArtifact <http://ids-connector.fokus.fraunhofer.de/Artifact/210> ;
+  ns0:endpointInformation "The file IDS-Reference-Architecture-Model-3.0.pdf can be obtained from this endpoint via GET request."^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/Artifact/210>
+  a ns0:Artifact ;
+  ns0:creationDate "2021-09-01T06:59:58.595Z"^^xsd:dateTimeStamp ;
+  ns0:fileName "IDS-Reference-Architecture-Model-3.0.pdf"^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/DataResource/13>
+  a ns0:DataResource ;
+  ns0:customLicense <http://www.opendefinition.org/licenses/cc-by> ;
+  ns0:description """Geoinformationen zu den Betriebsstellen des Schienenverkehrsnetzes.
+"""^^xsd:string ;
+  ns0:keyword "DB Netz"^^xsd:string, "Geo"^^xsd:string, "Stammdaten"^^xsd:string, "Betriebsstelle"^^xsd:string ;
+  ns0:resourceEndpoint <http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/fddb326e-431c-4b30-8e38-f88386c4db00>, <http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/16d5d5dd-ac67-41e5-81a5-f5c1cd7cdf17>, <http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/e54a57a5-02c6-4494-94de-8fe9073d827d>, <http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/e4632659-209d-4509-8bc6-35adcc7c3b6e> ;
+  ns0:title "Geo-Betriebsstelle"^^xsd:string ;
+  ns0:version ""^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/fddb326e-431c-4b30-8e38-f88386c4db00>
+  a ns0:ConnectorEndpoint ;
+  dc:description ""^^xsd:string ;
+  dc:format "ZIP"^^xsd:string ;
+  dc:license <http://www.opendefinition.org/licenses/cc-by> ;
+  dc:title "geo-betriebsstelle (Stand 01/2018)"^^xsd:string ;
+  ns0:accessURL <http://ids-connector.fokus.fraunhofer.de/data/32> ;
+  ns0:endpointArtifact <http://ids-connector.fokus.fraunhofer.de/Artifact/32> ;
+  ns0:endpointInformation "The file geo-betriebsstelle_2018.zip can be obtained from this endpoint via GET request."^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/Artifact/32>
+  a ns0:Artifact ;
+  ns0:creationDate "2020-09-14T10:18:32.960Z"^^xsd:dateTimeStamp ;
+  ns0:fileName "geo-betriebsstelle_2018.zip"^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/16d5d5dd-ac67-41e5-81a5-f5c1cd7cdf17>
+  a ns0:ConnectorEndpoint ;
+  dc:description ""^^xsd:string ;
+  dc:format "ZIP"^^xsd:string ;
+  dc:license <http://www.opendefinition.org/licenses/cc-by> ;
+  dc:title "geo-betriebsstelle (Stand 01/2019)"^^xsd:string ;
+  ns0:accessURL <http://ids-connector.fokus.fraunhofer.de/data/31> ;
+  ns0:endpointArtifact <http://ids-connector.fokus.fraunhofer.de/Artifact/31> ;
+  ns0:endpointInformation "The file geo-betriebsstelle_2019.zip can be obtained from this endpoint via GET request."^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/Artifact/31>
+  a ns0:Artifact ;
+  ns0:creationDate "2020-09-14T10:18:32.960Z"^^xsd:dateTimeStamp ;
+  ns0:fileName "geo-betriebsstelle_2019.zip"^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/e54a57a5-02c6-4494-94de-8fe9073d827d>
+  a ns0:ConnectorEndpoint ;
+  dc:description ""^^xsd:string ;
+  dc:format "ZIP"^^xsd:string ;
+  dc:license <http://www.opendefinition.org/licenses/cc-by> ;
+  dc:title "geo-betriebsstelle (Stand 10/2019)"^^xsd:string ;
+  ns0:accessURL <http://ids-connector.fokus.fraunhofer.de/data/33> ;
+  ns0:endpointArtifact <http://ids-connector.fokus.fraunhofer.de/Artifact/33> ;
+  ns0:endpointInformation "The file geo-betriebsstelle_2020.zip can be obtained from this endpoint via GET request."^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/Artifact/33>
+  a ns0:Artifact ;
+  ns0:creationDate "2020-09-14T10:18:32.960Z"^^xsd:dateTimeStamp ;
+  ns0:fileName "geo-betriebsstelle_2020.zip"^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/ConnectorEndpoint/e4632659-209d-4509-8bc6-35adcc7c3b6e>
+  a ns0:ConnectorEndpoint ;
+  dc:description ""^^xsd:string ;
+  dc:format "ZIP"^^xsd:string ;
+  dc:license <http://www.opendefinition.org/licenses/cc-by> ;
+  dc:title "geo-betriebsstelle (Stand 01/2017)"^^xsd:string ;
+  ns0:accessURL <http://ids-connector.fokus.fraunhofer.de/data/34> ;
+  ns0:endpointArtifact <http://ids-connector.fokus.fraunhofer.de/Artifact/34> ;
+  ns0:endpointInformation "The file geo-betriebsstelle.zip can be obtained from this endpoint via GET request."^^xsd:string .
+
+<http://ids-connector.fokus.fraunhofer.de/Artifact/34>
+  a ns0:Artifact ;
+  ns0:creationDate "2020-09-14T10:18:32.961Z"^^xsd:dateTimeStamp ;
+  ns0:fileName "geo-betriebsstelle.zip"^^xsd:string .
